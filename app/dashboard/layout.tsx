@@ -11,9 +11,9 @@ export default function RootLayout({
   return (
 
       <ClerkLoaded>
-          <div>
+          <div className="h-screen flex flex-col">
             <Header />
-            <main className={inter.className}>{children}</main>
+            <main className={`flex-1 flex justify-center ${inter.className}`}>{children}</main>
           </div>
       </ClerkLoaded>
 
